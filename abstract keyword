@@ -1,0 +1,42 @@
+/* 
+  abstract : 1. data abstract is used to hide certain details and showing essential details to the user.
+             2. abstract keyword is a non-access modifier used for classes and methods.
+             3. abstract classes cannot be instantiated, it's should be extended to (Instantiate, define abstract methods, override
+                abstract class methods)
+             4. abstract class may have zero or more abstract methods but if a class contain abstract method its class should be 
+                define as abstract class.
+             
+             Abstract class: is a restricted class that cannot be used to create objects 
+                             (to access it, it must be inherited from another class).
+
+             Abstract method: can only be used in an abstract class, and it does not have a body. 
+                              The body is provided by the subclass (inherited from).
+*/
+
+abstract class a{
+    // abstract void m1();
+    public void absM(){
+        System.out.println(" abstract class method");
+    }
+}
+class b extends a{
+    // public void m1(){
+    //     System.out.println(" m1 method");
+    // }
+}
+// class c extends b{
+//     public void m1(){
+//         System.out.println(" method in c");
+//     }
+// }
+
+class Main{
+    public void show(){
+        System.out.println("main class method");
+    }
+    public static void main(String[] args) {
+    
+    b obj = new b();
+    obj.absM();
+}
+}
