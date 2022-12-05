@@ -1,0 +1,46 @@
+/*  (constant)
+    final : used for classes, methods, attributes which makes them non - changeable(impossible to inherite, override)
+            final attributes : can initialized inside constructor and normal blocks.
+            static final attributes : can initialized inside static block.
+            final class : cannot be extend.
+            final method : cannot be override.
+            
+            final keyword is used when we don't want to change the attribute value once initialized.
+    
+*/
+
+
+
+class a{
+    final int val;
+    
+    // 
+    public a(){
+        System.out.println("a class constructor");
+    }
+    {
+        System.out.println("a class method");
+        val = 4;
+    }
+            
+    public void show(){
+        System.out.println(" a class val "+val);
+        
+    }
+}
+class b extends a{
+    public b(){
+        System.out.println("b class constructor");
+    }
+    public void show(){
+        System.out.println("b class show"+ val);
+    }
+}
+
+public class Main
+{   
+	public static void main(String[] args) {
+		b obj = new b();
+		obj.show();
+	}
+}
