@@ -1,0 +1,49 @@
+INTERFACE:
+        interface is a blueprint for classes it's as static constants and abstract methods.
+        java interface represents IS-A Relationship.
+        
+        Three reasons to use interface.
+        
+        1.  Used to achieve abstraction.
+        2.  By interface we can provide funtionality of multiple inheritance.
+        3.  It can be used to achieve loose coupling.
+        
+        
+        SYNTAX:
+              interface interface_name{
+                    public static final val = value;   //variables
+                    public abstract void function_name();     //funtions
+                    
+               //from java 8 dafault and static methods.    
+                    default void fun(){  //body }
+                    static void fun(){ // body }
+                }
+               
+==========================================================================================================================================================================
+//Example
+
+interface a{
+    public void fun();
+}
+interface c{
+    public void fun();
+}
+abstract class b implements c, a{
+    
+    public void fun1(){
+        System.out.println("fun1 interface");
+    }
+}
+class d extends b{
+    public void fun(){
+        System.out.println(" fun function");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    d obj = new d();
+	    obj.fun();
+	    obj.fun1();
+	}
+}
