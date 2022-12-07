@@ -1,0 +1,133 @@
+INHERITANCE:   (parent class -> inherited, child class -> inherits)
+
+            IMP NOTE: Inheritance have a ( IS - A Relationship).
+            
+            Inheritance is a mechanism in which child can acquires propertices and behaviour of parent class. it is part of OOPS.
+            
+            The idea behind inheritance is that you can create new classes that are build upon existing classes. so that you can reuse methods and fields of parent class.
+            moreover, you can override parent methods and add new methods and field in current class (child class).
+            '
+            why use inheritance?
+            
+                Inheritance provide code reusability.
+                Method overriding (runtime polymorphism.
+                
+            Types of Inheritance?
+                
+                single - level inheritance.
+                multi - level inheritance.
+                hierarchical inheritance.
+                multiple inheritance. (java not support)
+                hybrid inheritance.
+           
+
+single inheritance:
+                  when a single class inherits from another class know as single inheritance.
+
+multi - level inheritance:
+                  when there is chain of inheritance know as multi - level inheritance.
+                  
+hierarchical inheritance:
+                  when two or more classes(child classes) inherits from single class(same parent class).
+   
+multiple inheritance:
+                  when a child class inherits two or more parent classes is know as multiple inheritance.
+                  
+                  java don't support multiple inheritance to reduce complexity and ambiguity.
+                  when child class inherits two or more classes then java gives compile-time-error.
+
+hybrid inheritance:
+                  when two or more types of inheritances involved then its know as hybrid inheritance.
+                  (or) combination of inheritances.
+                  Example: (single inheritance + hierarchical inhertance).
+                  
+===============================================================================================================================================================================
+SYNTAX
+=============================================================================================================================================================================
+single inheritance 
+
+class a{
+  //body
+}
+class b extends a{
+  //body
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+multi - level inheritance
+
+class a{
+  // body
+}
+class b extends a{
+  // body
+}
+class c extends b{
+  // body
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+hierarchical inheritance
+
+class a{
+  // body
+}
+class b extends a{
+  // body
+}
+class c extends a{
+  // body
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+multiple inheritance
+(java not support)
+class a{
+  // body
+}
+class b{
+  // body
+}
+class c extends(a, b){
+ // body
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+hybrid inheritance
+
+class a{
+  // body
+}
+class b extends a{
+  // body
+}
+class c extends a{
+ // body
+}
+class d extends b{
+  // body
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
